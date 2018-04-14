@@ -1,0 +1,3 @@
+ A. The function has a reflection over the x axis and has shifted upwards 4 units.
+ B. The coordinate of the vertex is (0,4) and two additional points are (-1,3) and (1,3)
+ C. The domain of the function is all real numbers and the range is y less than or equal to 4. 

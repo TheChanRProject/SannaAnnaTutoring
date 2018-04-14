@@ -55,3 +55,39 @@ function inGraph(x,y) {
 inGraph(-1,-9)
 inGraph(1,9)
 inGraph(0.5, 3)
+
+const exp31ArrayX = [0, 4, 8, 12, 16]
+const exp31ArrayY = [3, 5, 7, 11, 19]
+
+function exp34(x) {
+  formula = Math.pow(1.069, x) * 2500
+  console.log(formula);
+}
+exp34(10)
+
+function newtonCooling(t) {
+  t0 = 0
+  t1 = 140
+  k = -0.0815
+  formula = t0 + (t1 - t0)*Math.exp(k*t)
+  console.log(formula);
+}
+newtonCooling(15)
+
+function func37p1(x) {
+  console.log(Math.sqrt(4*x + 2));
+}
+func37p1(1.1)
+func37p1(1.2)
+func37p1(1.3)
+func37p1(1.4)
+func37p1(1.5)
+
+function func37p2(x) {
+  console.log(Math.pow(x,3));
+}
+func37p2(1.1)
+func37p2(1.2)
+func37p2(1.3)
+func37p2(1.4)
+func37p2(1.5)
