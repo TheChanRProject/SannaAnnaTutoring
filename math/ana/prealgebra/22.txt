@@ -1,0 +1,16 @@
+A. Since angle A and angle B are corresponding angles according to the situation,
+we can set them equal to each other.
+
+4x = -5(x -18)
+
+B. To solve the equation we use the following steps:
+
+4x = -5x + 90
+
+9x = 90
+
+x = 10
+
+angleA = 4(10)  angleB = -5(-8)
+
+angleA = 40 angleB = 40
