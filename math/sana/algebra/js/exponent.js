@@ -43,6 +43,10 @@ function getBaseLog(x, y) {
 }
 getBaseLog(9, 27)
 getBaseLog(3,27)
+getBaseLog(4,2)
+getBaseLog(10,8)
+getBaseLog(10, 1000)
+getBaseLog(10, -2)
 
 function inGraph(x,y) {
   if (y == Math.pow(3, 2*x)) {
