@@ -1,0 +1,1 @@
+ Since the parent function is f(x) = 3^x, there is  a reflection across the y axis and the graph has shifted to the left by 1 unit. The graph also shifted down 2 units.
