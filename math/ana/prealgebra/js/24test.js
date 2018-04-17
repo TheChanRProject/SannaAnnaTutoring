@@ -22,7 +22,7 @@ triangleInequality(8,15,17)
 
 
 function interiorSum(n) {
-  formula = (n-1)*180
+  formula = (n-2)*180
   console.log(formula);
 }
 interiorSum(6)
