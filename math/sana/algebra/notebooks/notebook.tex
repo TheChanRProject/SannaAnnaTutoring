@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{sciNotationQ10}
+    \title{commonLogarithms}
     
     
     
@@ -280,97 +280,30 @@
     
 
     
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{math}
-\end{Verbatim}
+    Imagine that you have an expression such as:
 
+\[ 3^x + 4 = 16 \]
 
-    If the International Space Station is at an altitude of 385 km, that is
-our starting point, in other words it is a y-intercept because we would
-be 385 km at h = 0, where h is our input variable.
+    In this situation, it is possible to convert the 4 and 16 to the common
+base of 2, but we can immediately see that 2 and 3 are completely
+different bases which is why we need to use multiple logarithms to
+evaluate the solution.
 
-The question is asking how many hours it will take for the International
-Space Station to reach a star that is 4.8 lightyears away. To do this,
-we need to first convert 4.8 lightyears to kilometers so we are in a
-similar unit as the ISS's starting altitude. We also need to know the
-rate of travel which is given to us as 27,707 km per hour. Using this
-information, we can create a linear equation as follows:
+\[ 3^x + 2^2 = 2^4 \]
 
-new Altitude = Rate of Travel per Hour * Number of Hours + Starting
-Altitude
+    First, we need to rewrite the expression as:
 
-We'll represent new Altitude as y, rate of travel per hour as m, number
-of hours as h, and starting altitude as b.
+\[ 3^x = 8 \]
 
-\[ y = mx + b \]
+After we have done this, we can evaluate x as:
 
-    m = 27,707 km per hour, b = 385 km, the new altitude we are trying to
-approach is 4.8 lightyears which we can say is our y
+\[ x = \frac{log(8)}{log(3)} \]
 
-    The first step is to change the rate of travel into scientific notation:
+    \[ x \approx 1.893 \]
 
-\[ 27,707 = 2.7707 \times 10^4 \]
-
-The next step is to change 385 km to scientific notation:
-
-\[ 385 = 3.85 \times 10^2 \]
-
-Our y value is given to us in light years, but we need to convert it
-into kilometers.
-
-To do this we need to know the conversion rate between the two which is
-given to us in the problem:
-
-\[ 1 light year = 9.5 \times 10^{12} km \]
-
-If we are trying to get to a star that is 4.8 light years away from our
-current position, we need to convert 4.8 light years into km.
-
-4.8 light years =
-
-\[ 4.8 * 9.5 \times 10^{12} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}21}]:} \PY{l+m+mf}{4.8} \PY{o}{*} \PY{l+m+mf}{9.5} 
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}21}]:} 45.6
-\end{Verbatim}
-            
-    We need to reshape the product into scientific notation by making it:
-
-\[ 45.6 = 4.56 \times 10^{1} \]
-
-We can then put this exponent of 1 to be added to the 12.
-
-\[ 4.56 \times 10^{13} \]
-
-Now that we have 4.8 light years in kilometers, we can subtract the
-starting altitude and then divide by the rate of travel to get the
-number of hours needed to reach the star.
-
-    Since the starting altitude compared to the destination is so minimal,
-we can simply keep the result as:
-
-\[ 4.56 \times 10^{13} \]
-
-    Now we must compute the following quotient:
-
-\[ h = \frac{4.56 \times 10^{13}}{2.7707 \times 10^4} \]
-
-    Let's first divide the bases.
-
-\[ \frac{4.56}{2.7707} \approx 1.646 \]
-
-    Subtract the exponents
-
-\[ \frac{10^{13}}{10^{4}} = 10^{13 - 4} = 10^{9} \]
-
-    Our final answer for h will be:
-
-\[ h \approx 1.646 \times 10^9 hours \]
+If we did not take the common logarithm of both of these bases, then it
+would not be possible to solve the problem algebraically, but rather
+through trial and error in a numerical manner.
 
 
     % Add a bibliography block to the postdoc
