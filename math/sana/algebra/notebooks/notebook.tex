@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{commonLogarithms}
+    \title{LogarithmsTestQ45}
     
     
     
@@ -280,31 +280,42 @@
     
 
     
-    Imagine that you have an expression such as:
+    We can see the transformation visually from \$ f(x) = 3\^{}x \$ to \$
+3\^{}\{-x-1\} - 5 \$
 
-\[ 3^x + 4 = 16 \]
+    There is an inverse so that's why the graph orients over the y-axis and
+then moves to the right by one unit and down by 5 units.
 
-    In this situation, it is possible to convert the 4 and 16 to the common
-base of 2, but we can immediately see that 2 and 3 are completely
-different bases which is why we need to use multiple logarithms to
-evaluate the solution.
+We can see a graphical presentation of this.
 
-\[ 3^x + 2^2 = 2^4 \]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt} 
+        
+        \PY{k}{def} \PY{n+nf}{logTransform}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{x}\PY{p}{,}\PY{n}{h}\PY{p}{,}\PY{n}{k}\PY{p}{)}\PY{p}{:}
+            \PY{k}{if} \PY{n}{a} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{:} 
+                \PY{k}{return} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{n}{a}\PY{o}{*}\PY{n}{x} \PY{o}{\PYZhy{}} \PY{n}{h}\PY{p}{)} \PY{o}{+} \PY{n}{k}
+            \PY{k}{else}\PY{p}{:}
+                \PY{k}{return} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{n+nb}{abs}\PY{p}{(}\PY{n}{a}\PY{p}{)}\PY{o}{*}\PY{n}{x} \PY{o}{\PYZhy{}} \PY{n}{h}\PY{p}{)}\PY{p}{)} \PY{o}{+} \PY{n}{k}
+        
+        
+        
+        \PY{n}{xVals} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mf}{0.1}\PY{p}{)}
+        \PY{n}{func1Vals} \PY{o}{=} \PY{n}{logTransform}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{xVals}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}
+        \PY{n}{func2Vals} \PY{o}{=} \PY{n}{logTransform}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{xVals}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}
+        
+        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{xVals}\PY{p}{,}\PY{n}{func1Vals}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{xVals}\PY{p}{,} \PY{n}{func2Vals}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
 
-    First, we need to rewrite the expression as:
 
-\[ 3^x = 8 \]
-
-After we have done this, we can evaluate x as:
-
-\[ x = \frac{log(8)}{log(3)} \]
-
-    \[ x \approx 1.893 \]
-
-If we did not take the common logarithm of both of these bases, then it
-would not be possible to solve the problem algebraically, but rather
-through trial and error in a numerical manner.
-
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_2_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
 
     % Add a bibliography block to the postdoc
     
