@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{LogarithmsTestQ57}
+    \title{combinationAppsQ1}
     
     
     
@@ -280,20 +280,42 @@
     
 
     
-    \[ 2.82 \times 10^5 km = (7.50 \times 10^{-1}) * x \]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{from} \PY{n+nn}{numpy} \PY{k}{import} \PY{n}{math} \PY{k}{as} \PY{n}{m}
+\end{Verbatim}
 
-    \[ x = \frac{2.82 \times 10^5}{7.50 \times 10^{-1}} \]
+
+    \paragraph{In how many ways can five students in a class of 30 be chosen
+for a
+committee?}\label{in-how-many-ways-can-five-students-in-a-class-of-30-be-chosen-for-a-committee}
+
+    The above question is a combination because the order does not matter of
+how the students are chosen for the committee. Since we're choosing 5 at
+a time out of 30 possible students, we need to set up the following
+combination :
+
+\[ C(30,5) = \frac{30!}{5! * (30-5)!} \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{p}{(}\PY{l+m+mf}{2.82} \PY{o}{*} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{l+m+mf}{7.50} \PY{o}{*} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{combination}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{r}\PY{p}{)}\PY{p}{:}
+            \PY{k}{return} \PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{n}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{r}\PY{p}{)} \PY{o}{*} \PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{n}\PY{o}{\PYZhy{}}\PY{n}{r}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}1}]:} 376000.0
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{combination}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
-            
-    The final answer is \[ 3.76 \times 10^5 km \]
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+142506.0
+
+    \end{Verbatim}
+
+    Our final answer is:
+
+\[ C(30,5) = 142,506 \]
 
 
     % Add a bibliography block to the postdoc
