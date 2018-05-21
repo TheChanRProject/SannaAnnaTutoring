@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{combinationAppsQ1}
+    \title{binomCoeffQ14}
     
     
     
@@ -283,39 +283,119 @@
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
         \PY{k+kn}{from} \PY{n+nn}{numpy} \PY{k}{import} \PY{n}{math} \PY{k}{as} \PY{n}{m}
+        \PY{k+kn}{from} \PY{n+nn}{sympy} \PY{k}{import} \PY{o}{*}
 \end{Verbatim}
 
 
-    \paragraph{In how many ways can five students in a class of 30 be chosen
-for a
-committee?}\label{in-how-many-ways-can-five-students-in-a-class-of-30-be-chosen-for-a-committee}
+    \subsubsection{Consider the following
+expression}\label{consider-the-following-expression}
 
-    The above question is a combination because the order does not matter of
-how the students are chosen for the committee. Since we're choosing 5 at
-a time out of 30 possible students, we need to set up the following
-combination :
+    \subsection{\texorpdfstring{\[ (1+x)^n \]}{ (1+x)\^{}n }}\label{xn}
 
-\[ C(30,5) = \frac{30!}{5! * (30-5)!} \]
+    \begin{enumerate}
+\def\labelenumi{\Alph{enumi})}
+\tightlist
+\item
+  Use the Binomial Theorem to find the first four terms of this
+  polynomial.
+\end{enumerate}
+
+    Essentially we are trying to expand
+
+\[ (1+x)^4 \]
+
+    To expand this, we need to make use of the Binomial Theorem which is:
+
+\[ (x+y)^n = C(n, r - 1) x^n y^{n-r} \]
+
+For this problem:
+
+\[ (x+1)^4 = C(4,0) x^4 + C(4,1) x^3 1^1 + C(4,2) x^2 1^2 + C(4,3) x^1 1^3 + C(4,4) x^0 1^4 \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{combination}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{r}\PY{p}{)}\PY{p}{:}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{C}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{r}\PY{p}{)}\PY{p}{:}
             \PY{k}{return} \PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{n}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{r}\PY{p}{)} \PY{o}{*} \PY{n}{m}\PY{o}{.}\PY{n}{factorial}\PY{p}{(}\PY{n}{n}\PY{o}{\PYZhy{}}\PY{n}{r}\PY{p}{)}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{C}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{C}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{C}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{C}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{C}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{combination}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-142506.0
+1.0
+4.0
+6.0
+4.0
+1.0
 
     \end{Verbatim}
 
-    Our final answer is:
+    \[ (x+1)^4 = x^4 + 4x^3 + 6x^2 + 4x + 1 \]
 
-\[ C(30,5) = 142,506 \]
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{x}\PY{p}{,}\PY{n}{y} \PY{o}{=} \PY{n}{symbols}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{def} \PY{n+nf}{binomialExpansion}\PY{p}{(}\PY{n}{x}\PY{p}{:} \PY{n}{symbol}\PY{p}{,} \PY{n}{y}\PY{p}{:} \PY{n}{symbol}\PY{p}{,} \PY{n}{p}\PY{p}{:} \PY{n+nb}{int}\PY{p}{,} \PY{n}{operator}\PY{p}{:} \PY{n+nb}{str}\PY{p}{)}\PY{p}{:}
+            \PY{k}{if} \PY{n}{operator} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{+}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+                \PY{n}{formula} \PY{o}{=} \PY{p}{(}\PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{n}{p}
+            \PY{k}{elif} \PY{n}{operator} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZhy{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+                \PY{n}{formula} \PY{o}{=} \PY{p}{(}\PY{n}{x}\PY{o}{\PYZhy{}}\PY{n}{y}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{n}{p}
+            \PY{k}{else}\PY{p}{:}
+                \PY{n}{formula} \PY{o}{=} \PY{k+kc}{None} 
+            \PY{k}{return} \PY{n}{formula}\PY{o}{.}\PY{n}{expand}\PY{p}{(}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{binomialExpansion}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{+}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x**4 + 4*x**3 + 6*x**2 + 4*x + 1
+
+    \end{Verbatim}
+
+    \begin{enumerate}
+\def\labelenumi{\Alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Why is 1 + nx a good approximation of this expression when x is less
+  than 1?
+\end{enumerate}
+
+    Using code, it's possible to test out this approximation numerically in
+order to come up with a reason as to why 1 + nx is a good approximation
+of the expression when x \textless{} 1.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{k}{def} \PY{n+nf}{row4}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+             \PY{k}{return} \PY{n}{x}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{4} \PY{o}{+} \PY{l+m+mi}{4}\PY{o}{*}\PY{n}{x}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{3} \PY{o}{+} \PY{l+m+mi}{6}\PY{o}{*}\PY{n}{x}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2} \PY{o}{+} \PY{l+m+mi}{4}\PY{o}{*}\PY{n}{x} \PY{o}{+} \PY{l+m+mi}{1}
+         
+         \PY{n}{xV} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{4}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mf}{0.1}\PY{p}{,} \PY{l+m+mf}{0.2}\PY{p}{,} \PY{l+m+mf}{0.4}\PY{p}{,} \PY{l+m+mf}{0.8}\PY{p}{]}\PY{p}{)}
+         \PY{n}{yV} \PY{o}{=} \PY{n}{row4}\PY{p}{(}\PY{n}{xV}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{yV}\PY{p}{)}
+         
+         \PY{k}{def} \PY{n+nf}{row4approx}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+             \PY{k}{return} \PY{l+m+mi}{1} \PY{o}{+} \PY{l+m+mi}{4}\PY{o}{*}\PY{n}{x}
+         \PY{n}{yVApprox} \PY{o}{=} \PY{n}{row4approx}\PY{p}{(}\PY{n}{xV}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{yVApprox}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[256.      81.      16.       1.       0.       1.       1.4641   2.0736
+   3.8416  10.4976]
+[-19.  -15.  -11.   -7.   -3.    1.    1.4   1.8   2.6   4.2]
+
+    \end{Verbatim}
+
+    From the comparison of both the original expansion on numbers less than
+0 and the approximation, it seen that the only time when 1 + nx is a
+good approximation of the expression is when x = 0 and loses accuracy
+when x is between 0 and 1. From this numerical comparison, I would say
+that 1 + nx is not a good approximation of the expression when x is less
+than 1.
 
 
     % Add a bibliography block to the postdoc
