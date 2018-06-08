@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{VolumeQuizQ17}
+    \title{VolumeQuizQ18}
     
     
     
@@ -280,39 +280,25 @@
     
 
     
-    Formula of a Sphere
+    Volume of Sphere
 
 \[ V = \frac{4}{3} \pi r^3 \]
 
-    \[ \frac{1}{162} \pi = \frac{4}{3} \pi r^3 \]
-
-    \[ r^3 = \frac{3*1}{4*162} \]
-
-    \[ \sqrt[3]{r} = \sqrt[3]{\frac{3*1}{4*162}} \]
+\[ V = \frac{4}{3} \pi (7.6)^3 \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
-        
-        \PY{n}{r} \PY{o}{=} \PY{n+nb}{pow}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{3}\PY{o}{*}\PY{l+m+mi}{1}\PY{o}{/}\PY{p}{(}\PY{l+m+mi}{4}\PY{o}{*}\PY{l+m+mi}{162}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{r}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{volume}\PY{p}{(}\PY{n}{r}\PY{p}{)}\PY{p}{:}
+            \PY{k}{return} \PY{p}{(}\PY{l+m+mi}{4}\PY{o}{/}\PY{l+m+mi}{3}\PY{p}{)} \PY{o}{*} \PY{l+m+mf}{3.14} \PY{o}{*} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mf}{7.6}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{volume}\PY{p}{(}\PY{l+m+mf}{7.6}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-0.16666666666666669
+1837.8461866666664
 
     \end{Verbatim}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{6}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}5}]:} 0.16666666666666666
-\end{Verbatim}
-            
-    \[ r = \frac{1}{6} \]
+    \[ V = 1837.85 cm^3 \]
 
 
     % Add a bibliography block to the postdoc
