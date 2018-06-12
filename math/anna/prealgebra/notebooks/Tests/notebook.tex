@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{SolidsTestQ22}
+    \title{SolidsTestQ23}
     
     
     
@@ -280,29 +280,39 @@
     
 
     
-    \subsubsection{Find the amount the air needed to be occupied by the
-beach
-ball}\label{find-the-amount-the-air-needed-to-be-occupied-by-the-beach-ball}
+    \paragraph{Find the largest width of the containers'
+opening}\label{find-the-largest-width-of-the-containers-opening}
 
-    Volume of the beach ball:
+    Volume of a Cone:
 
-\[ V = \frac{4}{3} \pi r^3 \]
+\[ V = \frac{1}{3} \pi r^2 h \]
 
-\[ V = \frac{4}{3} \pi (6.5)^3 \]
+\[ 535 = \frac{1}{3} \pi r^2 * 8 \]
+
+    \[ \frac{535}{8} = \frac{1}{3} \pi r^2 \]
+
+\[ \frac{535 * 3}{8*\pi} = r^2 \]
+
+\[ r = \sqrt{\frac{535 * 3}{8*\pi} } \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{VolumeSphere}\PY{p}{(}\PY{n}{r}\PY{p}{)}\PY{p}{:}
-            \PY{k}{return} \PY{p}{(}\PY{l+m+mi}{4}\PY{o}{/}\PY{l+m+mi}{3}\PY{p}{)}\PY{o}{*}\PY{l+m+mf}{3.14}\PY{o}{*}\PY{n+nb}{pow}\PY{p}{(}\PY{n}{r}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{VolumeSphere}\PY{p}{(}\PY{l+m+mf}{6.5}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{maxVolume} \PY{o}{=} \PY{l+m+mi}{535}
+        \PY{n}{height} \PY{o}{=} \PY{l+m+mi}{8}
+        
+        \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
+        
+        \PY{n}{radius} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{535}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{l+m+mi}{8}\PY{o}{*}\PY{l+m+mf}{3.14}\PY{p}{)}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{radius}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-1149.7633333333333
+7.993329225167122
 
     \end{Verbatim}
 
-    \[ V \approx 1149.76333 \]
+    \[ r \approx 8 cm^3 \]
 
 
     % Add a bibliography block to the postdoc
