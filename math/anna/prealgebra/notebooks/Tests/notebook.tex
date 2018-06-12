@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{VolumeQuizQ19}
+    \title{SolidsTestQ22}
     
     
     
@@ -280,74 +280,29 @@
     
 
     
-    Part A:
+    \subsubsection{Find the amount the air needed to be occupied by the
+beach
+ball}\label{find-the-amount-the-air-needed-to-be-occupied-by-the-beach-ball}
 
-The cookies are shaped like cylinders.
+    Volume of the beach ball:
 
-Let's use the cylinder volume formula.
+\[ V = \frac{4}{3} \pi r^3 \]
 
-\[ V = \pi r^2 h \]
-
-\[ V = \pi * (1.25)^2 * 1 \]
+\[ V = \frac{4}{3} \pi (6.5)^3 \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+m+mf}{3.14} \PY{o}{*} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mf}{1.25}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{VolumeSphere}\PY{p}{(}\PY{n}{r}\PY{p}{)}\PY{p}{:}
+            \PY{k}{return} \PY{p}{(}\PY{l+m+mi}{4}\PY{o}{/}\PY{l+m+mi}{3}\PY{p}{)}\PY{o}{*}\PY{l+m+mf}{3.14}\PY{o}{*}\PY{n+nb}{pow}\PY{p}{(}\PY{n}{r}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{VolumeSphere}\PY{p}{(}\PY{l+m+mf}{6.5}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-4.90625
+1149.7633333333333
 
     \end{Verbatim}
 
-    \[ V_{1 cookie} = 4.90625 cm^3 \]
-
-    Part B:
-
-The food storage container is also shaped like a cylinder. Use the
-cylinder volume formula.
-
-\[ V = \pi r^2 h \]
-
-\[ V = \pi * (4.5)^2 * 4.75 \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+m+mf}{3.14} \PY{o}{*} \PY{n+nb}{pow}\PY{p}{(}\PY{l+m+mf}{4.5}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)} \PY{o}{*} \PY{l+m+mf}{4.75}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-302.02875
-
-    \end{Verbatim}
-
-    The volume of the container is :
-
-\[ V = 302.02875 cm^3 \]
-
-    Part C:
-
-Divide the volume from Part B by the volume from Part A.
-
-\[ n = \frac{V_{container}}{V_{cookie}} \]
-
-\[ n = \frac{302.02875}{4.90625} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+m+mf}{302.02875} \PY{o}{/} \PY{l+m+mf}{4.90625}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-61.56
-
-    \end{Verbatim}
-
-    \[ n \approx 61 \]
-
-Since Jenny baked 56 cookie sandwiches, we can clearly conclude that
-Jenny can fit all the cookies in the container since the container can
-hold approximately 61 cookies.
+    \[ V \approx 1149.76333 \]
 
 
     % Add a bibliography block to the postdoc
