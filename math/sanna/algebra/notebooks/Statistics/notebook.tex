@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{simulationsQ11}
+    \title{simulationsQ12}
     
     
     
@@ -280,9 +280,94 @@
     
 
     
-    The sample means in Samples 1 and 2 are less than the population mean of
-6.25 and and vary with a different standard deviation and then Sample
-3's mean is greater than the population mean of 6.25 .
+    \#\# Mean and Standard Deviation of Barcode Error
+
+    The formula for calculating the mean is:
+
+\[ \bar{X} = \frac{\sum_{1}^{n}{x_n}}{n} \]
+
+The formula for calculating the standard deviation is:
+
+\[ \sigma = \sqrt{\frac{(X - \bar{X})^2}{n}} \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{barcodeErrors} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{36}\PY{p}{,}\PY{l+m+mi}{14}\PY{p}{,}\PY{l+m+mi}{21}\PY{p}{,}\PY{l+m+mi}{39}\PY{p}{,}\PY{l+m+mi}{11}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}
+        
+        \PY{n}{meanErrors} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{barcodeErrors}\PY{p}{)} \PY{o}{/} \PY{n+nb}{len}\PY{p}{(}\PY{n}{barcodeErrors}\PY{p}{)}
+\end{Verbatim}
+
+
+    \[ \bar{X} = \frac{36+14+21+39+11+2}{6} \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{meanErrors}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+20.5
+
+    \end{Verbatim}
+
+    \[ \bar{X} = 20.5 \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{barcodeErrors}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{p}{(}\PY{n}{i}\PY{o}{\PYZhy{}}\PY{n}{meanErrors}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+240.25
+42.25
+0.25
+342.25
+90.25
+342.25
+
+    \end{Verbatim}
+
+    \[ \sigma = \sqrt{\frac{(36-20.5)^2 + (14 - 20.5)^2 + (21 - 20.5)^2 + (39 - 20.5)^2 + (11 - 20.5)^2 + (2 - 20.5)^2}{6}} \]
+
+\[ \sigma = \sqrt{\frac{240.25 + 42.25 + 0.25 + 342.25 + 90.25 + 342.25}{6}} \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{sqDif} \PY{o}{=} \PY{p}{[}\PY{l+m+mf}{240.25}\PY{p}{,}\PY{l+m+mf}{42.25}\PY{p}{,}\PY{l+m+mf}{0.25}\PY{p}{,}\PY{l+m+mf}{342.25}\PY{p}{,}\PY{l+m+mf}{90.25}\PY{p}{,}\PY{l+m+mf}{342.25}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{sqDif}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+1057.5
+
+    \end{Verbatim}
+
+    \[ \sigma = \sqrt{\frac{1057.5}{6}} \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{l+m+mf}{1057.5} \PY{o}{/} \PY{l+m+mi}{6} 
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}8}]:} 176.25
+\end{Verbatim}
+            
+    \[ \sigma = \sqrt{176.25} \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{l+m+mf}{176.25}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+13.275918047351754
+
+    \end{Verbatim}
+
+    \[ \sigma \approx 13.276 \]
 
 
     % Add a bibliography block to the postdoc
