@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{simulationsQ13}
+    \title{simulationsQ20}
     
     
     
@@ -280,118 +280,56 @@
     
 
     
-    \#\# Mean and Standard Deviation of Barcode Error Part 2
-
-    The formula for calculating the mean is:
-
-\[ \bar{X} = \frac{\sum_{1}^{n}{x_n}}{n} \]
-
-The formula for calculating the standard deviation is:
-
-\[ \sigma = \sqrt{\frac{(X - \bar{X})^2}{n}} \]
-
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{barcodeErrors} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{36}\PY{p}{,}\PY{l+m+mi}{14}\PY{p}{,}\PY{l+m+mi}{21}\PY{p}{,}\PY{l+m+mi}{39}\PY{p}{,}\PY{l+m+mi}{11}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{33}\PY{p}{,} \PY{l+m+mi}{45}\PY{p}{,} \PY{l+m+mi}{34}\PY{p}{,} \PY{l+m+mi}{17}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{29}\PY{p}{]}
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{samples} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{36}\PY{p}{,}\PY{l+m+mi}{14}\PY{p}{,}\PY{l+m+mi}{21}\PY{p}{,}\PY{l+m+mi}{39}\PY{p}{,}\PY{l+m+mi}{11}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}
         
-        \PY{n}{meanErrors} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{barcodeErrors}\PY{p}{)} \PY{o}{/} \PY{n+nb}{len}\PY{p}{(}\PY{n}{barcodeErrors}\PY{p}{)}
-\end{Verbatim}
-
-
-    \[ \bar{X_2} = \frac{36+14+21+39+11+2 + 33 + 45 + 34 + 17 + 1 + 29}{12} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{meanErrors}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-23.5
-
-    \end{Verbatim}
-
-    \[ \bar{X_2} = 23.5 \]
-
-The new mean differs from the former mean as follows:
-
-\[ \bar{X_2} - \bar{X_1} = 23.5 - 20.5 = 3 \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{barcodeErrors}\PY{p}{:}
-            \PY{n+nb}{print}\PY{p}{(}\PY{p}{(}\PY{n}{i}\PY{o}{\PYZhy{}}\PY{n}{meanErrors}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}
+        \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
+        
+        \PY{k}{def} \PY{n+nf}{mean\PYZus{}and\PYZus{}standardDeviation}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+            \PY{n}{mean} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{x}\PY{p}{)} \PY{o}{/} \PY{n+nb}{len}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+            \PY{n}{sqDifList} \PY{o}{=} \PY{p}{[}\PY{p}{(}\PY{n}{i}\PY{o}{\PYZhy{}}\PY{n}{mean}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{x}\PY{p}{]}
+            \PY{n}{std} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{sqDifList}\PY{p}{)}\PY{o}{/}\PY{n+nb}{len}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+            \PY{k}{return} \PY{p}{(}\PY{n}{mean}\PY{p}{,} \PY{n}{std}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{mean\PYZus{}and\PYZus{}standardDeviation}\PY{p}{(}\PY{n}{samples}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-156.25
-90.25
-6.25
-240.25
-156.25
-462.25
-90.25
-462.25
-110.25
-42.25
-506.25
-30.25
-
-    \end{Verbatim}
-
-    \[ \sigma_2 = \sqrt{\frac{(36-23.5)^2 + (14 - 23.5)^2 + (21 - 23.5)^2 + (39 - 23.5)^2 + (11 - 23.5)^2 + (2 - 23.5)^2 + (33 - 23.5)^2 + (45 - 23.5)^2 + (34 - 23.5)^2 + (17 - 23.5)^2 + (1 - 23.5)^2 + (29 - 23.5)^2}{12}} \]
-
-\[ \sigma_2 = \sqrt{\frac{156.25 + 90.25 + 6.25 + 240.25 + 156.25 + 462.25 + 90.25 + 462.25 + 110.25 + 42.25 + 506.25 + 30.25}{12}} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{sqDif} \PY{o}{=} \PY{p}{[}\PY{l+m+mf}{156.25} \PY{o}{+} \PY{l+m+mf}{90.25} \PY{o}{+} \PY{l+m+mf}{6.25} \PY{o}{+} \PY{l+m+mf}{240.25} \PY{o}{+} \PY{l+m+mf}{156.25} \PY{o}{+} \PY{l+m+mf}{462.25} \PY{o}{+} \PY{l+m+mf}{90.25} \PY{o}{+} \PY{l+m+mf}{462.25} \PY{o}{+} \PY{l+m+mf}{110.25} \PY{o}{+} \PY{l+m+mf}{42.25} \PY{o}{+} \PY{l+m+mf}{506.25} \PY{o}{+} \PY{l+m+mf}{30.25}\PY{p}{]}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{sqDif}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-2353.0
-
-    \end{Verbatim}
-
-    \[ \sigma_2 = \sqrt{\frac{2353}{12}} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}10}]:} \PY{l+m+mi}{2353} \PY{o}{/} \PY{l+m+mi}{12} 
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}10}]:} 196.08333333333334
-\end{Verbatim}
-            
-    \[ \sigma_2 = \sqrt{196.083333} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}11}]:} \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
-         
-         \PY{n+nb}{print}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{l+m+mf}{196.08333333}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-14.002975874077624
+(20.5, 13.275918047351754)
 
     \end{Verbatim}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}12}]:} \PY{l+m+mf}{14.003} \PY{o}{\PYZhy{}} \PY{l+m+mf}{13.276}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{conf}\PY{p}{(}\PY{n}{m}\PY{p}{,}\PY{n}{std}\PY{p}{,} \PY{n}{t}\PY{p}{:}\PY{n+nb}{str}\PY{p}{)}\PY{p}{:}
+            \PY{k}{if} \PY{n}{t} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{99}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+                \PY{n}{interval} \PY{o}{=} \PY{p}{(}\PY{n}{m} \PY{o}{\PYZhy{}} \PY{l+m+mf}{2.57}\PY{o}{*}\PY{n}{std}\PY{p}{,} \PY{n}{m} \PY{o}{+} \PY{l+m+mf}{2.57}\PY{o}{*}\PY{n}{std}\PY{p}{)}
+            \PY{k}{elif} \PY{n}{t} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{95}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+                \PY{n}{interval} \PY{o}{=} \PY{p}{(}\PY{n}{m} \PY{o}{\PYZhy{}} \PY{l+m+mf}{1.96}\PY{o}{*}\PY{n}{std}\PY{p}{,} \PY{n}{m} \PY{o}{+} \PY{l+m+mf}{1.96}\PY{o}{*}\PY{n}{std}\PY{p}{)}
+            \PY{k}{elif} \PY{n}{t} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{90}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+                \PY{n}{interval} \PY{o}{=} \PY{p}{(}\PY{n}{m} \PY{o}{\PYZhy{}} \PY{l+m+mf}{1.64}\PY{o}{*}\PY{n}{std}\PY{p}{,} \PY{n}{m} \PY{o}{+} \PY{l+m+mf}{1.64}\PY{o}{*}\PY{n}{std}\PY{p}{)}
+            \PY{k}{else}\PY{p}{:}
+                \PY{n}{interval} \PY{o}{=} \PY{k+kc}{None}
+            \PY{k}{return} \PY{n}{interval} 
 \end{Verbatim}
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}12}]:} 0.7270000000000003
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{conf}\PY{p}{(}\PY{l+m+mf}{20.5}\PY{p}{,}\PY{l+m+mf}{13.276}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{90}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{conf}\PY{p}{(}\PY{l+m+mf}{20.5}\PY{p}{,}\PY{l+m+mf}{13.276}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{95}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{conf}\PY{p}{(}\PY{l+m+mf}{20.5}\PY{p}{,}\PY{l+m+mf}{13.276}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{99}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
-            
-    \[ \sigma_2 \approx 14.003 \]
 
-The new standard deviation differs from the former standard deviation as
-follows:
 
-\[ \sigma_2 - \sigma_1 = 14.003 - 13.276 = 0.727 \]
+    \begin{Verbatim}[commandchars=\\\{\}]
+(-1.272639999999999, 42.272639999999996)
+(-5.520959999999999, 46.52096)
+(-13.619319999999995, 54.619319999999995)
+
+    \end{Verbatim}
+
+    Based on the above intervals, the number of errors made by all scans is
+20.5 errors 90\% of the time.
 
 
     % Add a bibliography block to the postdoc

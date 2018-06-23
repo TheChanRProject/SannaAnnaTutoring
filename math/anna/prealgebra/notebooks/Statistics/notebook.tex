@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{CentralTendencyQ5}
+    \title{TwoWayFrequency}
     
     
     
@@ -280,81 +280,52 @@
     
 
     
-    To get the median of this data, we need to first sort the numbers from
-least to greatest and then find the number in the middle.
+    \subsubsection{Two Way Frequency Table for Male and Female
+Students}\label{two-way-frequency-table-for-male-and-female-students}
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-        
-        \PY{n}{numbers} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{95}\PY{p}{,}\PY{l+m+mi}{96}\PY{p}{,}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{86}\PY{p}{,}\PY{l+m+mi}{75}\PY{p}{,}\PY{l+m+mi}{74}\PY{p}{,}\PY{l+m+mi}{72}\PY{p}{,}\PY{l+m+mi}{89}\PY{p}{,}\PY{l+m+mi}{97}\PY{p}{,}\PY{l+m+mi}{95}\PY{p}{,}\PY{l+m+mi}{93}\PY{p}{,}\PY{l+m+mi}{75}\PY{p}{,}\PY{l+m+mi}{75}\PY{p}{,}\PY{l+m+mi}{65}\PY{p}{]}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{numbers}\PY{p}{)}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-[95, 96, 100, 86, 75, 74, 72, 89, 97, 95, 93, 75, 75, 65]
-
-    \end{Verbatim}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{numbers}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{numbers}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{numbers}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{maleArray} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{42}\PY{p}{,}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{58}\PY{p}{]}\PY{p}{)}
+        \PY{n}{femaleArray} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{38}\PY{p}{,}\PY{l+m+mi}{9}\PY{p}{,}\PY{l+m+mi}{45}\PY{p}{,}\PY{l+m+mi}{30}\PY{p}{]}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-[65, 72, 74, 75, 75, 75, 86, 89, 93, 95, 95, 96, 97, 100]
-14
-
-    \end{Verbatim}
-
-    Since there are 14 numbers in this data, the median will be the average
-of the 7th and 8th numbers which is:
-
-\[ \frac{86 + 89}{2} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{p}{(}\PY{l+m+mi}{86}\PY{o}{+}\PY{l+m+mi}{89}\PY{p}{)} \PY{o}{/} \PY{l+m+mi}{2}
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{maleArray}\PY{p}{)}
 \end{Verbatim}
 
 
 \begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}5}]:} 87.5
+{\color{outcolor}Out[{\color{outcolor}3}]:} 132
 \end{Verbatim}
             
-    Verifying the median with numpy
-
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{floatArr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{n+nb}{float}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{numbers}\PY{p}{]}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{n}{floatArr}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{femaleArray}\PY{p}{)}
 \end{Verbatim}
 
 
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} 122
+\end{Verbatim}
+            
     \begin{Verbatim}[commandchars=\\\{\}]
-87.5
-
-    \end{Verbatim}
-
-    \[ Median = 87.5 \]
-
-    The mode is going to be the number with the highest frequency inside the
-data. The number with the highest count is 75 which appears 3 times. We
-can verify this with the scipy.stats package.
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{k+kn}{from} \PY{n+nn}{scipy} \PY{k}{import} \PY{n}{stats} 
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{stats}\PY{o}{.}\PY{n}{mode}\PY{p}{(}\PY{n}{floatArr}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{studentFrame} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TwoWay.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{studentFrame}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-ModeResult(mode=array([75.]), count=array([3]))
-
-    \end{Verbatim}
-
-    \[ Mode = 75 \]
-
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}5}]:}    Gender  Music  Student Government  Theater  Sports  Total
+        0    Male     42                  12       20      58    132
+        1  Female     38                   9       45      30    122
+        2   Total     80                  21       65      88    254
+\end{Verbatim}
+            
 
     % Add a bibliography block to the postdoc
     
