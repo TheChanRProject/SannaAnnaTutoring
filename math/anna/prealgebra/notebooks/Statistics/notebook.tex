@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{TwoWayFrequency}
+    \title{DataQuizQ16}
     
     
     
@@ -280,52 +280,30 @@
     
 
     
-    \subsubsection{Two Way Frequency Table for Male and Female
-Students}\label{two-way-frequency-table-for-male-and-female-students}
+    \subsubsection{Type-B Males}\label{type-b-males}
+
+    In the table shown, there are 183 patients with Type-B blood. Out of
+these patients, 99 of them are male patients.
+
+Taking the proportion
+
+\[ \frac{99}{183} \]
+
+We can calculate the percent of patients of type-B blood who are male.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{p} \PY{o}{=} \PY{l+m+mi}{99}\PY{o}{/}\PY{l+m+mi}{183}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{p}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{maleArray} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{42}\PY{p}{,}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{58}\PY{p}{]}\PY{p}{)}
-        \PY{n}{femaleArray} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{38}\PY{p}{,}\PY{l+m+mi}{9}\PY{p}{,}\PY{l+m+mi}{45}\PY{p}{,}\PY{l+m+mi}{30}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
+0.5409836065573771
 
+    \end{Verbatim}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{maleArray}\PY{p}{)}
-\end{Verbatim}
+    The percentage is 54.1\%
 
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}3}]:} 132
-\end{Verbatim}
-            
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{femaleArray}\PY{p}{)}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}4}]:} 122
-\end{Verbatim}
-            
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{studentFrame} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TwoWay.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-        \PY{n}{studentFrame}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}5}]:}    Gender  Music  Student Government  Theater  Sports  Total
-        0    Male     42                  12       20      58    132
-        1  Female     38                   9       45      30    122
-        2   Total     80                  21       65      88    254
-\end{Verbatim}
-            
 
     % Add a bibliography block to the postdoc
     
