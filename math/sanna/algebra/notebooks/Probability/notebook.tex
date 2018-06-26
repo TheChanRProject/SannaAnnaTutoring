@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{ProbDecisionsQ8}
+    \title{ProbsDecisionQ12}
     
     
     
@@ -280,44 +280,52 @@
     
 
     
-    \subsubsection{The Lottery Problem}\label{the-lottery-problem}
+    \subsubsection{Boffo Product Company
+Problem}\label{boffo-product-company-problem}
 
-    \[ E = p_1v_1 + p_2v_2 + p_3v_3 \]
+    A.
 
-    \[ p_1 = \frac{1}{100} * \frac{99}{100} * \frac{99}{100} \]
-\[ p_2 = \frac{1}{100} * \frac{1}{100} * \frac{99}{100} \]
-\[ p_3 = \frac{1}{100} * \frac{1}{100} * \frac{1}{100} \]
+How long should the company warranty the waffle iron for if they want no
+more than 6.7\% of the waffle irons to fall within that time?
 
-    \[ v_1 = 200 \]
+    If the company wants no more than 6.7\% of the waffle irons to fall
+within the warranty period, that means 100\% - 6.7\% is how much of the
+waffle irons should be spanned by the normal distributon.
 
-\[ v_2 = 5000 \]
+\[ 100 - 6.7 = 93.3  \]
 
-\[ v_3 = 100,000 \]
+    93.3 falls under 2 standard deviations away from the mean so we can
+calculate the warranty duration to be
+
+\[ \mu + 2\sigma \]
+
+    \[ \mu = 12 \]
+
+\[ \sigma = 0.667 \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{p1} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{99}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{99}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)}
-        \PY{n}{p2} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{99}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)}
-        \PY{n}{p3} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{100}\PY{p}{)}
-        
-        \PY{n}{v1} \PY{o}{=} \PY{l+m+mi}{200}
-        \PY{n}{v2} \PY{o}{=} \PY{l+m+mi}{5000}
-        \PY{n}{v3} \PY{o}{=} \PY{l+m+mi}{100000}
-        
-        \PY{n}{E} \PY{o}{=} \PY{n}{p1}\PY{o}{*}\PY{n}{v1} \PY{o}{+} \PY{n}{p2}\PY{o}{*}\PY{n}{v2} \PY{o}{+} \PY{n}{p3}\PY{o}{*}\PY{n}{v3} 
-        
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{E}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{warranty} \PY{o}{=} \PY{l+m+mi}{12} \PY{o}{+} \PY{l+m+mi}{2}\PY{o}{*}\PY{p}{(}\PY{l+m+mf}{0.667}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{warranty}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-2.5552
+13.334
 
     \end{Verbatim}
 
-    \[ E \approx 2.5552 \]
+    The warranty should last 1 year and 4 months.
 
-On average, you can expect to gain 2.55 dollars. Due to this, the game
-is technically not fair, but it is in your favor.
+    \begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\setcounter{enumi}{1}
+\item
+\end{enumerate}
+
+Since the company's cost per waffle iron is 13 dollars to make, if they
+sell each waffle iron at 18 dollars, then they are consistently making 5
+dollars per waffle iron so the expected value considering that no waffle
+irons will fail during the warranty period would be a gain of 5 dollars.
 
 
     % Add a bibliography block to the postdoc
