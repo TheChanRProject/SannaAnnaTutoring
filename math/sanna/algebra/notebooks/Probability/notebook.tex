@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{ProbabilityAndDecisions}
+    \title{ProbDecisionsQ7}
     
     
     
@@ -280,47 +280,63 @@
     
 
     
-    \subsubsection{Number of Hyacinths Next
-Month}\label{number-of-hyacinths-next-month}
+    \subsubsection{Coin Flip Expected Value}\label{coin-flip-expected-value}
 
-    \[ p(hyacinths) = \frac{n_{hyacinths}}{n_{total}} \]
+    The coin is flipped 3 times, we need to get the probabilites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  3 heads
+\item
+  2 heads
+\item
+  1 head
+\item
+  no heads
+\end{enumerate}
+
+    Set of outcomes:
+
+HHH, HHT, HTT, THH, HTH, HHT, TTT, THT
+
+    \[ p_1 = \frac{1}{8} \]
+
+    \[ p_2 = \frac{1}{2} \]
+
+    \[ p_3 = \frac{1}{4} \]
+
+    \[ p_4 = \frac{1}{8} \]
+
+    Values are seen in the list below for the outcomes respsectively:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{flowerDict} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rose}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{carnation}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{43}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{birdParadise}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{24}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hyacinth}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{14}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lilac}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{18}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{peony}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{35}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sunflower}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{6}\PY{p}{\PYZcb{}}
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{values} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{5}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{]}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{probability} \PY{o}{=} \PY{n}{flowerDict}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hyacinth}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{/}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{flowerDict}\PY{o}{.}\PY{n}{values}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{probs} \PY{o}{=} \PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{8}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{4}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{l+m+mi}{8}\PY{p}{)}\PY{p}{]}
+\end{Verbatim}
+
+
+    \[ Expected Value = p1v1 + p2v2 + p3v3 + p4v4 \]
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{E} \PY{o}{=} \PY{n}{values}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{probs}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{+} \PY{n}{values}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{n}{probs}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{+} \PY{n}{values}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{*}\PY{n}{probs}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]} \PY{o}{+} \PY{n}{values}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{*}\PY{n}{probs}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{E}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{probability}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-0.07
+-2.375
 
     \end{Verbatim}
 
-    \[ p(hyacinths) = 0.07 \]
+    \[ E \approx -2.375 \]
 
-To get the new number of hyacinths, we have to multiply the probability
-by 2000.
+    On average, it is expected that you lose 2.375 dollars
 
-\[ 0.07 * 2000 \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{l+m+mf}{0.07} \PY{o}{*} \PY{l+m+mi}{2000} 
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}5}]:} 140.0
-\end{Verbatim}
-            
 
     % Add a bibliography block to the postdoc
     
