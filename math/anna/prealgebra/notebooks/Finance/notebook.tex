@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{CalculatingInterestQ8}
+    \title{CalculatingInterestQ9}
     
     
     
@@ -280,34 +280,45 @@
     
 
     
-    \subsubsection{Rate of Decay}\label{rate-of-decay}
+    \subsubsection{Car Valuation}\label{car-valuation}
 
     \begin{itemize}
 \tightlist
 \item
-  r = 0.04
+  P = 19400
 \item
-  t = 5 years
+  c = 12105
 \item
-  P = \$ 1,000,000
+  t = 3 years
 \end{itemize}
 
+    Formula:
+
+\[ A(t) = P(1 - r)^t \]
+
+\[ \frac{A(t)}{P} = (1 - r)^t \]
+
+\[ (1 - r) = \sqrt[t]{\frac{A(t)}{P}} \]
+
+\[ r = 1 - \sqrt[t]{\frac{A(t)}{P}} \]
+
+\[ r = 1 - \sqrt[3]{\frac{12105}{19400}} \]
+
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{value}\PY{p}{(}\PY{n}{P}\PY{p}{,}\PY{n}{r}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
-            \PY{n}{decay} \PY{o}{=} \PY{n}{P}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{n}{t}
-            \PY{k}{return} \PY{n}{decay}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{rate}\PY{p}{(}\PY{n}{P}\PY{p}{,}\PY{n}{A}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
+            \PY{n}{finalRate} \PY{o}{=} \PY{l+m+mi}{1} \PY{o}{\PYZhy{}} \PY{n+nb}{pow}\PY{p}{(}\PY{p}{(}\PY{n}{A}\PY{o}{/}\PY{n}{P}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{n}{t}\PY{p}{)}\PY{p}{)}
+            \PY{k}{return} \PY{n}{finalRate}
         
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{value}\PY{p}{(}\PY{l+m+mi}{1000000}\PY{p}{,}\PY{l+m+mf}{0.04}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{rate}\PY{p}{(}\PY{l+m+mi}{19400}\PY{p}{,}\PY{l+m+mi}{12105}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-815372.6975999998
+0.14548238185124873
 
     \end{Verbatim}
 
-    \subparagraph{Current Value = \$
-815,372.70}\label{current-value-815372.70}
+    \[  r \approx 0.145 = 14.5   \]
 
 
     % Add a bibliography block to the postdoc
