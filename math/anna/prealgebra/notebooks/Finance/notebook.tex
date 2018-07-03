@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{CalculatingInterestQ9}
+    \title{CalculatingInterestQ10}
     
     
     
@@ -280,45 +280,44 @@
     
 
     
-    \subsubsection{Car Valuation}\label{car-valuation}
+    \subsubsection{Initial Value of Loan}\label{initial-value-of-loan}
 
     \begin{itemize}
 \tightlist
 \item
-  P = 19400
+  P = ?
 \item
-  c = 12105
+  A(4) = 8996.32
 \item
-  t = 3 years
+  t = 4 years
+\item
+  r = 0.056
+\item
+  n = 1
 \end{itemize}
 
-    Formula:
+Formula:
 
-\[ A(t) = P(1 - r)^t \]
+\[ A(t) = P(1 - \frac{r}{n})^{nt} \]
 
-\[ \frac{A(t)}{P} = (1 - r)^t \]
+\[ P = \frac{A(t)}{(1 - \frac{r}{n})^{nt}} \]
 
-\[ (1 - r) = \sqrt[t]{\frac{A(t)}{P}} \]
-
-\[ r = 1 - \sqrt[t]{\frac{A(t)}{P}} \]
-
-\[ r = 1 - \sqrt[3]{\frac{12105}{19400}} \]
+\[ P = \frac{8996.32}{(1 - \frac{0.056}{1})^{4}} \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{rate}\PY{p}{(}\PY{n}{P}\PY{p}{,}\PY{n}{A}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
-            \PY{n}{finalRate} \PY{o}{=} \PY{l+m+mi}{1} \PY{o}{\PYZhy{}} \PY{n+nb}{pow}\PY{p}{(}\PY{p}{(}\PY{n}{A}\PY{o}{/}\PY{n}{P}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{n}{t}\PY{p}{)}\PY{p}{)}
-            \PY{k}{return} \PY{n}{finalRate}
-        
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{rate}\PY{p}{(}\PY{l+m+mi}{19400}\PY{p}{,}\PY{l+m+mi}{12105}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{principle}\PY{p}{(}\PY{n}{A}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{r}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
+            \PY{n}{p} \PY{o}{=} \PY{n}{A} \PY{o}{/} \PY{p}{(}\PY{l+m+mi}{1} \PY{o}{\PYZhy{}} \PY{p}{(}\PY{n}{r}\PY{o}{/}\PY{n}{n}\PY{p}{)}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{n}{t}\PY{p}{)}
+            \PY{k}{return} \PY{n}{p} 
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{principle}\PY{p}{(}\PY{l+m+mf}{8996.32}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mf}{0.056}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-0.14548238185124873
+11328.617610612577
 
     \end{Verbatim}
 
-    \[  r \approx 0.145 = 14.5   \]
+    \[ P \approx 11328.62 \]
 
 
     % Add a bibliography block to the postdoc
