@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{CalculatingInterestQ6}
+    \title{CalculatingInterestQ8}
     
     
     
@@ -280,100 +280,34 @@
     
 
     
-    \subsubsection{Investment Account Option
-Problem}\label{investment-account-option-problem}
+    \subsubsection{Rate of Decay}\label{rate-of-decay}
 
-    Option 1: Compounded Annually
-
-Account A Details:
-
-\begin{itemize}
+    \begin{itemize}
 \tightlist
 \item
-  r = 0.08
+  r = 0.04
 \item
-  t = 8 years
+  t = 5 years
 \item
-  n = 1
-\item
-  P = \$ 50,000
+  P = \$ 1,000,000
 \end{itemize}
 
-    Formula:
-
-\[ A(8) = 50,000(1 + \frac{0.08}{1})^{8} \]
-
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{accountA}\PY{p}{(}\PY{n}{P}\PY{p}{,} \PY{n}{n}\PY{p}{,} \PY{n}{r}\PY{p}{,} \PY{n}{t}\PY{p}{)}\PY{p}{:}
-            \PY{n}{interest} \PY{o}{=} \PY{n}{P}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1} \PY{o}{+} \PY{p}{(}\PY{n}{r}\PY{o}{/}\PY{n}{n}\PY{p}{)}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{n}\PY{o}{*}\PY{n}{t}\PY{p}{)}
-            \PY{k}{return} \PY{n}{interest} 
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{value}\PY{p}{(}\PY{n}{P}\PY{p}{,}\PY{n}{r}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
+            \PY{n}{decay} \PY{o}{=} \PY{n}{P}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{n}{t}
+            \PY{k}{return} \PY{n}{decay}
         
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{accountA}\PY{p}{(}\PY{l+m+mi}{50000}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mf}{0.08}\PY{p}{,}\PY{l+m+mi}{8}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{value}\PY{p}{(}\PY{l+m+mi}{1000000}\PY{p}{,}\PY{l+m+mf}{0.04}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-92546.51051409413
+815372.6975999998
 
     \end{Verbatim}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{l+m+mf}{92546.51} \PY{o}{\PYZhy{}} \PY{l+m+mi}{50000}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}2}]:} 42546.509999999995
-\end{Verbatim}
-            
-    Interest\_A = 92546.51 - 50,000 = 42546.51
-
-    Option 2: Compounded Continuously
-
-Account B Details:
-
-\begin{itemize}
-\tightlist
-\item
-  r = 0.07
-\item
-  t = 10 years
-\item
-  P = 50,000
-\end{itemize}
-
-    Formula:
-
-\[ A(10) = 50,000*e^{0.08*10} \]
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{m}
-        \PY{k}{def} \PY{n+nf}{accountB}\PY{p}{(}\PY{n}{P}\PY{p}{,}\PY{n}{r}\PY{p}{,}\PY{n}{t}\PY{p}{)}\PY{p}{:}
-            \PY{n}{interest} \PY{o}{=} \PY{n}{P}\PY{o}{*}\PY{n}{m}\PY{o}{.}\PY{n}{e}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{r}\PY{o}{*}\PY{n}{t}\PY{p}{)}
-            \PY{k}{return} \PY{n}{interest} 
-        
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{accountB}\PY{p}{(}\PY{l+m+mi}{50000}\PY{p}{,}\PY{l+m+mf}{0.07}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-100687.63537352384
-
-    \end{Verbatim}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{l+m+mf}{100687.63} \PY{o}{\PYZhy{}} \PY{l+m+mi}{50000}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}4}]:} 50687.630000000005
-\end{Verbatim}
-            
-    Interest\_B = 50687.63
-
-    Comparing the two interests, the best account to invest in is Account B
-as it provides the most interest.
+    \subparagraph{Current Value = \$
+815,372.70}\label{current-value-815372.70}
 
 
     % Add a bibliography block to the postdoc
