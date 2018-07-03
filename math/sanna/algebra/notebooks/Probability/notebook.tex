@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{StatProbQuizQ8}
+    \title{StatProbQuizQ9}
     
     
     
@@ -280,44 +280,36 @@
     
 
     
-    \subsubsection{Is the Game Fair?}\label{is-the-game-fair}
+    \subsubsection{Lottery Expected Value}\label{lottery-expected-value}
 
-    \paragraph{If the expected value is equal to 0, then the game is
-fair.}\label{if-the-expected-value-is-equal-to-0-then-the-game-is-fair.}
+    Expected Value:
 
-    \[ E = p_1v_1 + p_2v_2 + p_3v_3 \]
+\[ E = p_1v_1 + p_2v_2 + p_3v_3 \]
 
-\[ p_i = \frac{n_i}{\sum_{i=1}^{n}{n_i}} \]
+\[ v = [100,5, -1] \]
 
-\[ v_1 = + 15 \]
+\[ sampleSpace = [1,5,994] \]
 
-\[ v_2 = 0 \]
-
-\[ v_3 = - 15 \]
+\[ p = \frac{sampleSpace[i]}{\sum_{i=1}^{n}{sampleSpace}} \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{tiles} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{\PYZcb{}}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{sampleSpace} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
         
-        \PY{n}{tilesList} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{tiles}\PY{o}{.}\PY{n}{values}\PY{p}{(}\PY{p}{)}\PY{p}{)}
-        
-        \PY{n}{p} \PY{o}{=} \PY{p}{[}\PY{n}{i} \PY{o}{/} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{tilesList}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{tilesList}\PY{p}{]}
-        
-        \PY{n}{points} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{15}\PY{p}{]}
+        \PY{n}{p} \PY{o}{=} \PY{p}{[}\PY{n}{i} \PY{o}{/} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{sampleSpace}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{sampleSpace}\PY{p}{]}
+        \PY{n}{v} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
         
         \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{p}\PY{p}{:}
-            \PY{n}{e} \PY{o}{=} \PY{p}{[}\PY{n}{i}\PY{o}{*}\PY{n}{j} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{points}\PY{p}{]}
+            \PY{n}{e} \PY{o}{=} \PY{p}{[}\PY{n}{i}\PY{o}{*}\PY{n}{j} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{v}\PY{p}{]}
         \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{e}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
--0.5999999999999996
+-1.0
 
     \end{Verbatim}
 
-    According to the expected value, it seems that on average, the player
-would lose 0.60 points per game so the game is not in your favor and
-therefore is not fair.
+    The expected value of a ticket is a negative dollar
 
 
     % Add a bibliography block to the postdoc
