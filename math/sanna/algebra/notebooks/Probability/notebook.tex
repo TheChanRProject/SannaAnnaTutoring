@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{ProbsDecisionQ12}
+    \title{StatProbQuizQ8}
     
     
     
@@ -280,52 +280,44 @@
     
 
     
-    \subsubsection{Boffo Product Company
-Problem}\label{boffo-product-company-problem}
+    \subsubsection{Is the Game Fair?}\label{is-the-game-fair}
 
-    A.
+    \paragraph{If the expected value is equal to 0, then the game is
+fair.}\label{if-the-expected-value-is-equal-to-0-then-the-game-is-fair.}
 
-How long should the company warranty the waffle iron for if they want no
-more than 6.7\% of the waffle irons to fall within that time?
+    \[ E = p_1v_1 + p_2v_2 + p_3v_3 \]
 
-    If the company wants no more than 6.7\% of the waffle irons to fall
-within the warranty period, that means 100\% - 6.7\% is how much of the
-waffle irons should be spanned by the normal distributon.
+\[ p_i = \frac{n_i}{\sum_{i=1}^{n}{n_i}} \]
 
-\[ 100 - 6.7 = 93.3  \]
+\[ v_1 = + 15 \]
 
-    93.3 falls under 2 standard deviations away from the mean so we can
-calculate the warranty duration to be
+\[ v_2 = 0 \]
 
-\[ \mu + 2\sigma \]
-
-    \[ \mu = 12 \]
-
-\[ \sigma = 0.667 \]
+\[ v_3 = - 15 \]
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{warranty} \PY{o}{=} \PY{l+m+mi}{12} \PY{o}{+} \PY{l+m+mi}{2}\PY{o}{*}\PY{p}{(}\PY{l+m+mf}{0.667}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{warranty}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{tiles} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{\PYZcb{}}
+        
+        \PY{n}{tilesList} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{tiles}\PY{o}{.}\PY{n}{values}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        
+        \PY{n}{p} \PY{o}{=} \PY{p}{[}\PY{n}{i} \PY{o}{/} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{tilesList}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{tilesList}\PY{p}{]}
+        
+        \PY{n}{points} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{15}\PY{p}{]}
+        
+        \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{p}\PY{p}{:}
+            \PY{n}{e} \PY{o}{=} \PY{p}{[}\PY{n}{i}\PY{o}{*}\PY{n}{j} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{points}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{e}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-13.334
+-0.5999999999999996
 
     \end{Verbatim}
 
-    The warranty should last 1 year and 4 months.
-
-    \begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{1}
-\item
-\end{enumerate}
-
-Since the company's cost per waffle iron is 13 dollars to make, if they
-sell each waffle iron at 18 dollars, then they are consistently making 5
-dollars per waffle iron so the expected value considering that no waffle
-irons will fail during the warranty period would be a gain of 5 dollars.
+    According to the expected value, it seems that on average, the player
+would lose 0.60 points per game so the game is not in your favor and
+therefore is not fair.
 
 
     % Add a bibliography block to the postdoc
