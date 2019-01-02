@@ -6,6 +6,8 @@ Sentence Patterns Project
 
 The bird sings.
 
+At 8 o clock, the criminal was arrested.
+
 3. S-V-IO-DO
 
 4. S-LV-PN
