@@ -1,1 +1,15 @@
 Sentence Patterns Project
+
+1. S-V-DO (includes S-V-DO-OC)
+
+2. S-V
+
+3. S-V-IO-DO
+
+4. S-LV-PN
+
+5. S-LV-PA
+
+6. Expletive-Verb Subject (inverted sentence)
+
+7. Question Pattern
