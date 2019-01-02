@@ -4,7 +4,7 @@ Sentence Patterns Project
 
 The President gave a purple heart to John Rambo.
 
-The Grammy for Best New Artist in 2018 goes to to Alessia Cara. 
+The Grammy for Best New Artist in 2018 goes to Alessia Cara. 
 
 2. S-V
 
