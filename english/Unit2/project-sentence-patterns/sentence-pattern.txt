@@ -4,6 +4,8 @@ Sentence Patterns Project
 
 2. S-V
 
+The bird sings.
+
 3. S-V-IO-DO
 
 4. S-LV-PN
