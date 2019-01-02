@@ -2,6 +2,8 @@ Sentence Patterns Project
 
 1. S-V-DO (includes S-V-DO-OC)
 
+The President gave a purple heart to John Rambo.
+
 2. S-V
 
 The bird sings.
