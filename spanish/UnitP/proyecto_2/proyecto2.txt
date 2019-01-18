@@ -5,4 +5,7 @@ Spanish for Project 2
 
 "It was originally built in 1921." -> Lo construye en el año 1921. 
 
+"Its main purpose is used to put artifacts and large exhibitions of statues." -> El propósito primario es poner artifactos y exposiciónes largos para las estatuas. 
+
+"In 1999 and so on." -> En el año 1999 y después. 
 
