@@ -18,3 +18,5 @@ Spanish for Project 2
 "The objects are a replica of the original and have been kept in a secure way." -> Los objetos son réplicas del original y se han mantenido en una manera segura. 
 
 "They have objects which are interesting for everyone to visit and have a look at." -> Los tienen objetos que son interesantes para todos personajes a visitar y mirar. 
+
+"Since California has so much diversity and mixtures of culture, many people from all kinds of backgrounds come to visit the museum to learn more about the natural history of the archaeological discoveries in California" -> California tine much diversidad y mezclas de la cultura, entonces mucha gente del muchos fondos vienen a visitar el museo a appender más sobre de la historia natural de los descubrimientos arquelógicos en California. 
