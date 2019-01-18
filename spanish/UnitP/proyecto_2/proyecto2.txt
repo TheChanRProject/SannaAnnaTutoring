@@ -15,3 +15,6 @@ Spanish for Project 2
 
 "Yes they do" -> Si, tienen. 
 
+"The objects are a replica of the original and have been kept in a secure way." -> Los objetos son réplicas del original y se han mantenido en una manera segura. 
+
+"They have objects which are interesting for everyone to visit and have a look at." -> Los tienen objetos que son interesantes para todos personajes a visitar y mirar. 
