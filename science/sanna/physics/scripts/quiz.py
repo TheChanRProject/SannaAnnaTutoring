@@ -5,6 +5,9 @@ print(speed_1)
 
 from IPython.core.display import display, Latex
 
-display(Latex("$$ s = \\frac{d}{t} \n d = st \n d = 52 * 1.5 $$"))
+display(Latex("$$ s = \\frac{d}{t} \space d = st \space d = 52 * 1.5 $$"))
 d_1 = 52 * 1.5
 print(d_1)
+
+a = (54 - 32) / 8
+print(a)
