@@ -12,3 +12,6 @@ Spanish for Project 2
 "The content is quite solid." -> El contento es muy sólido. 
 
 "They had tombs, kingdoms and temples. They were quite ancient." -> Los tengan tumbas, reinos, y templos. Los son muy antiguo. 
+
+"Yes they do" -> Si, tienen. 
+
