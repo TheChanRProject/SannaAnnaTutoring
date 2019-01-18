@@ -10,3 +10,5 @@ Spanish for Project 2
 "In 1999 and so on." -> En el año 1999 y después. 
 
 "The content is quite solid." -> El contento es muy sólido. 
+
+"They had tombs, kingdoms and temples. They were quite ancient. 
