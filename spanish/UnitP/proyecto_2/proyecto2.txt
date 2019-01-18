@@ -1,4 +1,8 @@
 Spanish for Project 2
 
 
-"This site is in the US." -> El lugar es en los Estados Unidos. 
+"This site is in the US." -> El lugar es en los Estados Unidos.  
+
+"It was originally built in 1921." -> Lo construye en el año 1921. 
+
+
