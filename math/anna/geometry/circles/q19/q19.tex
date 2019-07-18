@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+%
+%Margin - 1 inch on all sides
+%
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+%
+%Doublespacing
+%
+\usepackage{setspace}
+\doublespacing
+
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+
+\usepackage{amsmath,amssymb}
+%% my poor man's solution to arc notation
+\newcommand{\tarc}{\mbox{\large$\frown$}}
+\newcommand{\arc}[1]{\stackrel{\tarc}{#1}}
+
+
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{Bhattacharjee \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+
+%
+%Begin document
+%
+\begin{document}
+
+
+
+
+\begin{flushleft}
+
+%%%%First page name, class, etc
+Ana\\
+Kuykendall\\
+Geometry\\
+July 17 2019\\
+
+
+%%%%Title
+\begin{center}
+Question 19
+\end{center}
+
+
+%%%%Changes paragraph indentation to 0.5in
+\setlength{\parindent}{0.5in}
+\setlength{\parindent}{0.5in}
+
+
+\begin{equation}
+  m \arc{ABC} = 180 \\
+  m \angle{COD} = 48 \\
+  m \angle{COD} \cong m \angle{AOB} \\
+  m \arc{ABC} = m \arc{AB} + m \arc{BC} \\
+  m \angle{AOB} = m \arc{AB} \\
+  m \arc{AB} = 48 \\
+  180 = 48 + m \arc{BC} \\
+  m \arc{BC} = 180 - 48 \\
+  m \arc{BC} = 132 \\ 
+\end{equation}
+
+
+
+
+\end{flushleft}
+\end{document}
+\}
