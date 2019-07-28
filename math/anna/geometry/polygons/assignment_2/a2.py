@@ -8,4 +8,3 @@ class Rectangle():
         return 2*self.base + 2*self.height
     def area(self):
         return self.base * self.height
-        
