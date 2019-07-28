@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 class Rectangle():
     def __init__(self, b, h):
@@ -70,3 +70,12 @@ enclosure_2 = Rectangle(1100, 180)
 enclosure_2.feet_area()
 
 enclosure_2.feet_area() > enclosure_1.feet_area()
+
+class Circle():
+    def __init__(self, r):
+        self.radius = r
+    def area(self):
+        return np.pi * np.power(self.radius, 2)
+
+circ1 = Circle(2.5)
+circ1.area()
