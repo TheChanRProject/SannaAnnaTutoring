@@ -54,4 +54,9 @@ trial_one.area(trial_one.ninety, 3)
 
 def equilateral_triangle_area(s):
     return 0.25 * s**2 * math.sqrt(3)
-    
+
+def triangle_leg(a, c):
+    b = math.sqrt(c**2 - a**2)
+    return b
+
+equilateral_triangle_area(5)
