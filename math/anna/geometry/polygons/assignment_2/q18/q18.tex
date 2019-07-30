@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+
+%
+%Margin - 1 inch on all sides
+%
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+%
+%Doublespacing
+%
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{amssymb}
+
+\newcommand{\rectangle}{{%
+  \ooalign{$\sqsubset\mkern3mu$\cr$\mkern3mu\sqsupset$\cr}%
+}}
+
+
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{ \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+
+%
+%Begin document
+%
+\begin{document}
+\begin{flushleft}
+
+%%%%First page name, class, etc
+Ana Bhattacharjee\\
+Geometry\\
+July 27 2019\\
+
+
+%%%%Title
+\begin{center}
+Question 18: Dimensions of the Dog's Fence
+\end{center}
+
+
+%%%%Changes paragraph indentation to 0.5in
+\setlength{\parindent}{0.5in}
+%%%%Begin body of paper here
+\begin{flushleft}
+  \textbf{Problem}
+\end{flushleft}
+
+Tina is planning to fence in an area for her dog. She wants to create a rectangular area of 1600 square feet for her pet and can afford to purchase 160 feet of fence. In two or more complete sentences, explain the algebraic model, calculations and reasoning necessary to determine the dimensions of the rectangular area.
+
+\par
+
+\begin{flushleft}
+  \textbf{Solution}
+\end{flushleft}
+
+Since Tina can only afford 160 feet of fence, one alternative way to look at that is to say that Tina can afford up to 160 feet that would surround her pet. This means that the 160 represents a perimeter. We already know that the fence is going to be rectangular so we also know what the formula for calculating a rectangular perimeter will be. The following equation will be useful:
+\par
+\begin{align}
+  \begin{equation}
+    P = 2l + 2w \\
+    160 = 2l + 2w \\
+  \end{equation}
+\end{align}
+\par
+If we break this equation down further by factoring out a 2 from both the length and the width, we get the following:
+\begin{align}
+  \begin{equation}
+  2(l + w) = 160 \\
+  l + w = \frac{160}{2} \\
+  l + w = 80 \\
+  \end{equation}
+\end{align}
+\par
+Now that we know that the length and width should add up to 80 feet, we can revisit what we know about the space of the fence. Tina desires the fence to have a rectangular area of 1600 square feet which can be represented in the following equation based on the area of a rectangle:
+\par
+\begin{align}
+  A = lw \\
+  1600 = lw \\
+\end{align}
+\par
+Now that we have two equations with two variables, we can first relate one variable from the other in order to substitute it into the other equation. This process is shown below:
+\par
+\begin{align}
+  l = 80 - w \\
+  1600 = w(80 - w) \\
+  1600 = 80w - w^2 \\
+\end{align}
+\par
+At this point, we can solve a trinomial by putting all the terms on the left side of the equation and set the right side equal to 0 and then factor.
+\par
+\begin{align}
+  w^2 - 80w + 1600 = 0 \\
+  (w - 40)^2 = 0 \\
+  \sqrt{(w-40)^2} = 0 \\
+  w - 40 = 0 \\
+  w - (40 + 40) = 0 + 40 \\
+  w = 40 \\
+\end{align}
+\par
+Since the width has been solved to be 40 ft, we can now substitute it back into the equation $ l = 80 - w $ to get the dimension of the fence length.
+\par
+\begin{align}
+  l = 80 - 40 \\
+  l = 40 \\
+\end{align}
+\par
+Based on these calculations, the dimensions of the fence that Tina wants for her pet should be 40 ft $ \times $ 40 ft.
+%%%%Title
+\begin{center}
+
+\end{center}
+
+
+\setlength{\parindent}{0.5in}
+
+1
+
+%%%%Works cited
+\begin{workscited}
+
+
+\end{workscited}
+
+\end{flushleft}
+\end{document}
+\}
