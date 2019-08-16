@@ -120,8 +120,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolC5.tf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolD10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolD7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolD5.tfm
+INPUT q38p2.png
+INPUT ./q38p2.png
+INPUT ./q38p2.png
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT q38.aux
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc

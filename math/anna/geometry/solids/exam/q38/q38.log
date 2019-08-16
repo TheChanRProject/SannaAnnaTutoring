@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 AUG 2019 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 AUG 2019 23:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,37 +424,48 @@ File: q38.png Graphic file (type png)
 <use q38.png>
 Package pdftex.def Info: q38.png  used on input line 15.
 (pdftex.def)             Requested size: 310.4979pt x 147.85257pt.
+<q38p2.png, id=3, 710.655pt x 335.2525pt>
+File: q38p2.png Graphic file (type png)
+<use q38p2.png>
+Package pdftex.def Info: q38p2.png  used on input line 42.
+(pdftex.def)             Requested size: 379.5021pt x 179.03348pt.
+
+Overfull \hbox (34.5021pt too wide) in paragraph at lines 42--43
+ [] 
+ []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./q38.p
-ng>] (./q38.aux) ) 
+ng>] [2 <./q38p2.png>] [3] (./q38.aux) ) 
 Here is how much of TeX's memory you used:
- 4038 strings out of 492616
- 53911 string characters out of 6129482
- 99518 words of memory out of 5000000
- 7899 multiletter control sequences out of 15000+600000
+ 4043 strings out of 492616
+ 53975 string characters out of 6129482
+ 104518 words of memory out of 5000000
+ 7903 multiletter control sequences out of 15000+600000
  17335 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,270b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/
-MnSymbolC.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSy
-mbolE.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbol
-D.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol1
-0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol5
-.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol7.
-pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on q38.pdf (1 page, 198285 bytes).
+ 41i,15n,25p,270b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fon
+ts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/local/texlive/2019/texmf-dist/fonts/e
+nc/dvips/mnsymbol/MnSymbolC.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/d
+vips/mnsymbol/MnSymbolE.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips
+/mnsymbol/MnSymbolD.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/
+mnsymbol/MnSymbol10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/
+mnsymbol/MnSymbol5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/m
+nsymbol/MnSymbol7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r7.pfb>
+Output written on q38.pdf (3 pages, 288157 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

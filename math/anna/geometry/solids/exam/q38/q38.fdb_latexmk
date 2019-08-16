@@ -1,5 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1565934813 "q38.tex" "q38.pdf" "q38" 1565934814
+["pdflatex"] 1565936077 "q38.tex" "q38.pdf" "q38" 1565936078
+  "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc" 1177804218 3341 78e600b269762aa2a25a5293cc4535c0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc" 1177804218 3275 8d7166dfdbc31ffdc8aba0c31b3bd5c8 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc" 1177804218 3375 808c88761dbdc66fc653d18f42765b64 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc" 1177804218 3433 7734f79d46d219d7347f02050533a56b ""
@@ -95,10 +96,11 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "q38.aux" 1565934814 202 3f56361c2334ee5d45ffef58b68c6c2d "pdflatex"
+  "q38.aux" 1565936078 202 3f56361c2334ee5d45ffef58b68c6c2d "pdflatex"
   "q38.png" 1565933576 86123 2bf8d0fd3f6779c7c41a3014fb847ff8 ""
-  "q38.tex" 1565934812 1022 25d3adaf0da444173240772805cb2797 ""
+  "q38.tex" 1565936076 2337 301e784e5fb81a05d3a0d8f365b36486 ""
+  "q38p2.png" 1565934848 93673 ef7d9897de1573f86b9c2db00114fc17 ""
   (generated)
   "q38.aux"
-  "q38.log"
   "q38.pdf"
+  "q38.log"
