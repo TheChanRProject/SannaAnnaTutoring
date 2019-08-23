@@ -18,5 +18,8 @@ RW = QR / 4
 print(RW)
 
 
-128 / 16
-72 - 18
+
+WQ == distance((6*np.sqrt(2), 6*np.sqrt(2)), (3,3))
+WQ == distance((2*np.sqrt(2), 2*np.sqrt(2)), (3,3))
+WQ == distance(Q, Q)
+WQ == distance((9,9), Q)
