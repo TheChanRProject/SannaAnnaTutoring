@@ -23,3 +23,7 @@ WQ == distance((6*np.sqrt(2), 6*np.sqrt(2)), (3,3))
 WQ == distance((2*np.sqrt(2), 2*np.sqrt(2)), (3,3))
 WQ == distance(Q, Q)
 WQ == distance((9,9), Q)
+
+18**2
+324 + 9
+np.sqrt(5365)
