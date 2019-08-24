@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1566605096 "midpoint.tex" "midpoint.pdf" "midpoint" 1566605096
+["pdflatex"] 1566605096 "midpoint.tex" "midpoint.pdf" "midpoint" 1566605118
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -31,8 +31,8 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "midpoint.aux" 1566605096 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "midpoint.tex" 1566605096 434 509e5bf7339f9abd65f799c215d75aac ""
+  "midpoint.tex" 1566605118 434 509e5bf7339f9abd65f799c215d75aac ""
   (generated)
   "midpoint.aux"
-  "midpoint.pdf"
   "midpoint.log"
+  "midpoint.pdf"
