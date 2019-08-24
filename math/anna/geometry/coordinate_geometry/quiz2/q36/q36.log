@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  23 AUG 2019 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  23 AUG 2019 19:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -185,26 +185,35 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+<../q36/circle.png, id=1, 722.7pt x 722.7pt>
+File: ../q36/circle.png Graphic file (type png)
+<use ../q36/circle.png>
+Package pdftex.def Info: ../q36/circle.png  used on input line 36.
+(pdftex.def)             Requested size: 345.0pt x 344.99533pt.
+
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./q36.aux) ) 
+[2 <../q36/circle.png>] (./q36.aux) ) 
 Here is how much of TeX's memory you used:
- 2033 strings out of 492616
- 27576 string characters out of 6129482
- 91742 words of memory out of 5000000
- 5947 multiletter control sequences out of 15000+600000
- 7349 words of font info for 27 fonts, out of 8000000 for 9000
+ 2041 strings out of 492616
+ 27706 string characters out of 6129482
+ 96742 words of memory out of 5000000
+ 5953 multiletter control sequences out of 15000+600000
+ 7803 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,270b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb>
-Output written on q36.pdf (1 page, 28277 bytes).
+ 41i,8n,25p,342b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb>
+Output written on q36.pdf (2 pages, 85879 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
