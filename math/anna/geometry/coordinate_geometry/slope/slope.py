@@ -47,12 +47,12 @@ plt.text(5, 5, "T", size=14)
 plt.text(-4, -2, "U", size=14)
 plt.savefig(f"{path}/q10.png")
 
-X = [2, 7, 2, 2]
-Y = [1, 1, 4, 1]
+X = [2, -1, -2, 2]
+Y = [2, 3, -1, 2]
 plt.figure(figsize=(10,10))
 plt.plot(X, Y, 'g-')
-plt.text(X[0], Y[0], 'A', color="silver", size=14)
-plt.text(X[1], Y[1], "B", color="silver", size=14)
-plt.text(X[2], Y[2], "C", color="silver", size=14)
+plt.text(X[0], Y[0], 'J', color="silver", size=14)
+plt.text(X[1], Y[1], "K", color="silver", size=14)
+plt.text(X[2], Y[2], "L", color="silver", size=14)
 # plt.text(X[3], Y[3], "U", color="silver", size=14)
-plt.savefig(f"{path}/q12.png")
+plt.savefig(f"{path}/q15.png")
