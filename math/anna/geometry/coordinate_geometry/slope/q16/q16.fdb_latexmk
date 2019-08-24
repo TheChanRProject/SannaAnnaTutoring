@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1566620486 "q16.tex" "q16.pdf" "q16" 1566620487
+["pdflatex"] 1566620610 "q16.tex" "q16.pdf" "q16" 1566620611
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -50,9 +50,9 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "polygon.png" 1566620180 26073 a2fc311f1bf5b18ac68562bdf9cffb96 ""
-  "q16.aux" 1566620486 121 610dff338ad12699750cb171bf5d19bf "pdflatex"
-  "q16.tex" 1566620486 758 278216117d8823742b578db5f822067d ""
+  "q16.aux" 1566620610 121 610dff338ad12699750cb171bf5d19bf "pdflatex"
+  "q16.tex" 1566620610 808 a1c02a8c38f8bb619918356b44765e9d ""
   (generated)
-  "q16.log"
-  "q16.pdf"
   "q16.aux"
+  "q16.pdf"
+  "q16.log"
