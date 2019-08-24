@@ -1,5 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1566611595 "q35.tex" "q35.pdf" "q35" 1566611596
+["pdflatex"] 1566612282 "q35.tex" "q35.pdf" "q35" 1566612283
+  "../q35/circle.png" 1566612166 18388 c1d9d311ec31c514d7e035e05452aacd ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -52,9 +53,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "q35.aux" 1566611596 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "q35.tex" 1566611594 1167 893ef03f129971e372501235ef2eb3f5 ""
+  "q35.aux" 1566612282 133 83748b355b5cd5b691b909e7d311c3b9 "pdflatex"
+  "q35.tex" 1566612282 1327 0a59bfd5164eb0553a203d776866f991 ""
   (generated)
-  "q35.aux"
   "q35.log"
   "q35.pdf"
+  "q35.aux"
