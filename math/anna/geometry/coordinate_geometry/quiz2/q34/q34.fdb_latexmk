@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1566610809 "q34.tex" "q34.pdf" "q34" 1566610810
+["pdflatex"] 1566610921 "q34.tex" "q34.pdf" "q34" 1566610922
   "../../../../../../math/Anna/geometry/coordinate_geometry/quiz2/q34/rectangular_garden.png" 1566610148 18988 c7af3dc2b5a73730ae01999040a48c01 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -51,9 +51,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "q34.aux" 1566610810 127 50dc01eb7993d3f264ec2125568b761e "pdflatex"
-  "q34.tex" 1566610808 1219 fb523523196010e6d64b2af976dda918 ""
+  "q34.aux" 1566610920 127 2ac25d1fe2580dc1cc08a7521eb85264 "pdflatex"
+  "q34.tex" 1566610920 1226 1d3f29e605de22eb4a12f084d979e196 ""
   (generated)
+  "q34.aux"
   "q34.log"
   "q34.pdf"
-  "q34.aux"
