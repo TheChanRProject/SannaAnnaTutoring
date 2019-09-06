@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1567747502 "d_q19.tex" "d_q19.pdf" "d_q19" 1567748084
+["pdflatex"] 1567748597 "d_q19.tex" "d_q19.pdf" "d_q19" 1567748597
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -52,9 +52,10 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "d_q19.aux" 1567747502 140 83f9ca08fa1da8360c1b701a4832cd9c "pdflatex"
-  "d_q19.tex" 1567748082 689 59f53e4f85e3c057b44397dea7fbdb76 ""
+  "d_q19.aux" 1567748596 140 83f9ca08fa1da8360c1b701a4832cd9c "pdflatex"
+  "d_q19.tex" 1567748594 915 3a539c5f8ffaac8e2ee20fce4ec88ef3 ""
+  "dilation.png" 1567748534 38309 687898e304be04d6e872e3096120f45a ""
   (generated)
-  "d_q19.pdf"
-  "d_q19.aux"
   "d_q19.log"
+  "d_q19.aux"
+  "d_q19.pdf"
