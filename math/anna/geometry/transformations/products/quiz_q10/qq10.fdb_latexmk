@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1568172784 "qq10.tex" "qq10.pdf" "qq10" 1568172785
+["pdflatex"] 1568172784 "qq10.tex" "qq10.pdf" "qq10" 1568175021
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -33,6 +33,6 @@
   "qq10.aux" 1568172784 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
   "qq10.tex" 1568172784 332 98fcbfe37f7ffa181c6ce92e1c480307 ""
   (generated)
+  "qq10.log"
   "qq10.pdf"
   "qq10.aux"
-  "qq10.log"
