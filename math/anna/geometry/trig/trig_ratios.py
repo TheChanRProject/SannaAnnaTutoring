@@ -28,3 +28,30 @@ def degree_to_rad(deg_val):
     return (deg_val * 2*np.pi) / 360
 
 5 / np.sin(degree_to_rad(20))
+
+4 * np.tan(degree_to_rad(65))
+
+60*np.cos(degree_to_rad(15))
+
+70*np.sin(degree_to_rad(29))
+
+def rad_to_degree(rad_val):
+    return (rad_val * 360) / (2*np.pi)
+
+rad_to_degree(np.arccos(0.9))
+
+rad_to_degree(np.arcsin(4.8 / 5.1))
+
+rad_to_degree(np.arctan(5 / 9))
+
+rad_to_degree(np.arccos(3 / 10))
+
+rad_to_degree(np.arccos(20 / 24))
+
+rad_to_degree(np.arcsin(20 / 24))
+
+24 * np.cos(degree_to_rad(58))
+24 ** 2
+576 - 400
+np.sqrt(176 )
+300 * np.sin(degree_to_rad(60))
