@@ -45,3 +45,15 @@ np.rad2deg(np.arccos(50 / 160))
 np.rad2deg(np.arcsin(((5*np.sin(np.deg2rad(45))) / 4)))
 np.rad2deg(np.arcsin((10*np.sin(np.deg2rad(85))) /13))
 np.rad2deg(np.arcsin((4*np.sin(np.deg2rad(150)))/7))
+(5*np.sin(np.deg2rad(45))) / 3
+283*283*np.sin(np.deg2rad(20))
+27392 / 36
+761 * 12
+180 - (30 + 45)
+(10*np.sin(np.deg2rad(105)))/np.sin(np.deg2rad(45))
+(70*np.sqrt(3))/2
+(420*np.sin(np.deg2rad(36)))/250
+(420 * 300 * np.sin(np.deg2rad(36))) / 2
+np.rad2deg((6*np.sqrt(2))/18)
+np.rad2deg(np.arcsin(np.sqrt(2) / 3))
+(16*np.sqrt(3)) / 3
