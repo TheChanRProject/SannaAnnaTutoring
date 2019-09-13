@@ -1,5 +1,5 @@
 from mathematics.anna.geometry.trig.law_of_cosines.law_of_cosines import Cosine
-
+import numpy as np
 prob1 = Cosine(10, 15)
 prob1.side(120)
 
@@ -24,3 +24,11 @@ prob6.side(120)
 
 prob6 = Cosine(5, 12.3)
 180 - prob6.angle(9)
+
+# Question 7
+B = np.rad2deg(np.arcsin((6*np.sin(np.deg2rad(30)))/4))
+B
+180 - 49
+131 + 30
+
+# Question 8
