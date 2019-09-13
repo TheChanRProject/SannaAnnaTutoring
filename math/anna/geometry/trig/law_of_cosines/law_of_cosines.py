@@ -18,7 +18,3 @@ class Cosine():
     def cos_angle(self, c):
         argument = (c**2 - (self.a**2 + self.b**2)) / (2*self.a*self.b)
         return argument
-
-
-cos1 = Cosine(9, 12)
-cos1.cos_angle(16)
