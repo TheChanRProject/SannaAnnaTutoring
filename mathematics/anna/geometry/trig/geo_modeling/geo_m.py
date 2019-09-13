@@ -12,3 +12,8 @@ V_trail
 n_trail = V_box / V_trail
 
 n_trail
+
+V_g_machine = (4/3)*np.pi*(6**3)
+V_gumball = (4/3)*np.pi*(0.6**3)
+n_gumballs = V_g_machine / V_gumball
+n_gumballs
