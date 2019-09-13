@@ -32,3 +32,13 @@ B
 131 + 30
 
 # Question 8
+sinC = (7*np.sin(np.deg2rad(15)))/3
+sinC
+
+# Question 9
+area = 0.5 * (np.sqrt(2) * 8) * np.sin(np.deg2rad(45))
+area
+
+# Question 10
+base = Cosine(2.5,2.5).side(25)
+base
