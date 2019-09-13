@@ -42,3 +42,18 @@ area
 # Question 10
 base = Cosine(2.5,2.5).side(25)
 base
+
+# Question 11
+vertex = 160 - 75
+d = Cosine(560, 350).side(vertex)
+d
+
+# Question 12
+diag = Cosine(12, 10).side(105)
+diag
+
+# Question 13
+side = Cosine(1.5, 0.5).side(120)
+side
+
+11 / 13
