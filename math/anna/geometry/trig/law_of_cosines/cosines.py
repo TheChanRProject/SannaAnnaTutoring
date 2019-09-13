@@ -16,3 +16,12 @@ np.sqrt(16 + 49 + 2*(4*7*np.cos(np.deg2rad(20))))
 144 / 2
 180 - (72 + 18)
 print(law_of_cosines(40, 70, 144))
+print(law_of_cosines(3, 3, 35))
+print(law_of_cosines(105, 85, 45))
+print(law_of_cosines(5, 7, 80))
+150 - 45
+print(law_of_cosines(800, 840, 105))
+90 + 55
+print(law_of_cosines(16, 18, 145))
+
+np.rad2deg((3*np.sin(np.deg2rad(120)))/8)
