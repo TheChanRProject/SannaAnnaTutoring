@@ -14,3 +14,13 @@ prob4.angle(420)
 
 prob5 = Cosine(8,8)
 180 - prob5.angle(3)
+
+25 + 81
+
+prob6 = Cosine(5,9)
+prob6.side(120)
+
+12.3**2
+
+prob6 = Cosine(5, 12.3)
+180 - prob6.angle(9)
