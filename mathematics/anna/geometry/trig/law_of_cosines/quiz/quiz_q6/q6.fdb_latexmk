@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1568349196 "q9.tex" "q9.pdf" "q9" 1568351000
+["pdflatex"] 1568351661 "q6.tex" "q6.pdf" "q6" 1568351662
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -14,6 +14,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -51,10 +52,10 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "q9.aux" 1568349196 129 1f15de5953f28f22eff19ec71bac05bb "pdflatex"
-  "q9.tex" 1568349196 1059 bccea3a02b2e52dd79d650285d0dffd4 ""
-  "triangle.png" 1568348626 24906 1319476b1f3b0a409759062b0d89c550 ""
+  "q6.aux" 1568351662 121 35a69518133abf70f44d6ba290ab03f8 "pdflatex"
+  "q6.tex" 1568351660 922 91f0c29cc52f7343a42e5a5f503b7c47 ""
+  "triangle.png" 1568350914 41252 349c5228e2ef690aabc455e292eb4842 ""
   (generated)
-  "q9.pdf"
-  "q9.log"
-  "q9.aux"
+  "q6.log"
+  "q6.pdf"
+  "q6.aux"
