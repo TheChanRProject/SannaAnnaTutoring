@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1568343419 "q1.tex" "q1.pdf" "q1" 1568343419
+["pdflatex"] 1568344271 "q1.tex" "q1.pdf" "q1" 1568344272
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -33,9 +33,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "q1.aux" 1568343418 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "q1.tex" 1568343418 393 434d2b0fa0ba5d51937eadb2f792899e ""
+  "q1.aux" 1568344272 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "q1.tex" 1568344270 394 be4fc2e117f135124662d4f805b59b5b ""
   (generated)
-  "q1.pdf"
-  "q1.aux"
   "q1.log"
+  "q1.aux"
+  "q1.pdf"
