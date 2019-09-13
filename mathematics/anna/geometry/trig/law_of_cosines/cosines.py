@@ -1,27 +1,2 @@
 import numpy as np
-def law_of_cosines(a,b, angle):
-    return np.sqrt(a**2 + b**2 - 2*a*b*np.cos(np.deg2rad(angle)))
-
-def side_squared(a,b,angle):
-    return a**2 + b**2 - 2*a*b*np.cos(np.deg2rad(angle))
-
-print(law_of_cosines(9, 5, 120))
-print(law_of_cosines(4, 7, 20))
-print(side_squared(9,5,120))
-np.sqrt(16 + 49 + 2*(4*7*np.cos(np.deg2rad(20))))
-
-16 + (3.5)**2
-360 - 2*36
-288 / 2
-144 / 2
-180 - (72 + 18)
-print(law_of_cosines(40, 70, 144))
-print(law_of_cosines(3, 3, 35))
-print(law_of_cosines(105, 85, 45))
-print(law_of_cosines(5, 7, 80))
-150 - 45
-print(law_of_cosines(800, 840, 105))
-90 + 55
-print(law_of_cosines(16, 18, 145))
-
-np.rad2deg((3*np.sin(np.deg2rad(120)))/8)
+from mathematics.anna.geometry.trig.law_of_cosines.law_of_cosines import Cosine
