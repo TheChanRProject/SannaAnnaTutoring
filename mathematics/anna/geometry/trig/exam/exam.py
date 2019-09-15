@@ -20,4 +20,28 @@ angle_A = prob10.angle(7)
 # Problem 11
 prob11 = Cosine(12, 10)
 d = prob11.side(90 + 50)
-d
+
+# Problem 12
+prob12 = Cosine(9, 13)
+angle = prob12.angle(20)
+180 - angle
+
+# Problem 13
+(20 * 7.5) / 1500
+180 / 600
+200 * 200
+
+200000 / 280
+240000 / 560
+429 / 714
+
+V_sheet_cake = 12 * 9 * 2
+cal_V = V_sheet_cake / 3600
+V_birthday_cake = np.pi * (4.5)**2 * 4
+
+calories_birthday = cal_V * V_birthday_cake
+
+calories_birthday
+1.5 * 8
+20 * 26
+520 / 12
