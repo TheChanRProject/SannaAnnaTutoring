@@ -45,3 +45,18 @@ calories_birthday
 1.5 * 8
 20 * 26
 520 / 12
+
+# Question 22
+g_machine = (4/3)*np.pi * (9)**3
+gumball = (4/3) * np.pi * (3/4)**3
+
+g_machine / gumball
+
+# Question 23
+
+canister = np.pi * (1.5)**2 * 7
+tennis_ball = (4/3)*np.pi * (2.25 / 2)**3
+
+canister / tennis_ball
+3 * tennis_ball
+canister - (3 * tennis_ball)
