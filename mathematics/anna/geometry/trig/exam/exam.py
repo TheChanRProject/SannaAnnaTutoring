@@ -60,3 +60,4 @@ tennis_ball = (4/3)*np.pi * (2.25 / 2)**3
 canister / tennis_ball
 3 * tennis_ball
 canister - (3 * tennis_ball)
+    
