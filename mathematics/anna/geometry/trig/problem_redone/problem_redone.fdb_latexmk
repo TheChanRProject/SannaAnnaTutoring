@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1568667229 "problem_redone.tex" "problem_redone.pdf" "problem_redone" 1568667230
+["pdflatex"] 1568667375 "problem_redone.tex" "problem_redone.pdf" "problem_redone" 1568667543
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -48,9 +48,9 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "new_image.png" 1568666822 864894 354e64d0e53991cf352511308f006621 ""
-  "problem_redone.aux" 1568667230 113 11b9902c5c717ab8ac2fedb0d31cf57c "pdflatex"
-  "problem_redone.tex" 1568667228 330 ff87cfa6ad5a9c410c76f6483fc73518 ""
+  "problem_redone.aux" 1568667376 113 11b9902c5c717ab8ac2fedb0d31cf57c "pdflatex"
+  "problem_redone.tex" 1568667542 450 bcb9ad48db059e0dda58edf32c1b6bd3 ""
   (generated)
-  "problem_redone.aux"
   "problem_redone.log"
   "problem_redone.pdf"
+  "problem_redone.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 SEP 2019 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 SEP 2019 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -194,7 +194,7 @@ Package pdftex.def Info: new_image.png  used on input line 12.
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./new_i
-mage.png>] (./problem_redone.aux) ) 
+mage.png>] [2] (./problem_redone.aux) ) 
 Here is how much of TeX's memory you used:
  2039 strings out of 492616
  27763 string characters out of 6129482
@@ -203,14 +203,14 @@ Here is how much of TeX's memory you used:
  7349 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,281b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb>
-Output written on problem_redone.pdf (1 page, 1075041 bytes).
+</usr/local/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb>
+Output written on problem_redone.pdf (2 pages, 1078078 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
