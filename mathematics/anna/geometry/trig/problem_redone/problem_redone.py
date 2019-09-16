@@ -15,4 +15,4 @@ plt.savefig("mathematics/anna/geometry/trig/problem_redone/triangle.png")
 ab = 185 * 283
 
 A = ab * np.sin(np.deg2rad(80))
-A
+12 * round(A / 36)
