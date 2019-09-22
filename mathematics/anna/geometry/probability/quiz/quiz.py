@@ -17,3 +17,5 @@ on_time = 32.5 / (17.5 + 32.5)
 
 delayed
 on_time
+
+45 * 2.2
